@@ -24,10 +24,9 @@ barras = ax.barh(nombres, sueldos, color=color)
 
 if not t_nombre:
     plt.yticks([])
-    # ax.set_xlabel('Valores')
+    
 ax.set_title('Gráfico de Barras Horizontales')
 
-# Mostrar el valor numérico al final de cada barra
 if t_sueldo:
     for barra in barras:
         sueldo = barra.get_width()
